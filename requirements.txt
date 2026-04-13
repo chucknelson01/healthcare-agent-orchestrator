@@ -1,0 +1,30 @@
+# --- Protocol & Trust Layer (Identity Handshake) ---
+a2a-sdk
+python-jose[cryptography]
+
+# --- Execution & Tools (The "Hands") ---
+# Fixed at 0.2.0 to maintain 'streamable-http' transport logic
+fastmcp==0.2.0
+mcp>=1.0.0
+
+# --- Orchestration & AI (The "Brain") ---
+langgraph
+langchain-openai
+litellm
+
+# --- Data & RAG (The "Policy Agent") ---
+pymupdf4llm
+pymupdf>=1.24.3
+openai
+
+# --- Web & API Tier (The Portal) ---
+streamlit
+fastapi
+uvicorn
+starlette
+httpx
+
+# --- Identity & Configuration ---
+python-dotenv
+pydantic>=2.7.0
+pydantic-settings

@@ -1,0 +1,15 @@
+# Secrets and environment variables
+.env
+
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# OS-specific files
+.DS_Store
