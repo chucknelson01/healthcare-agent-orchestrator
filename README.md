@@ -27,14 +27,14 @@ This project uses the **`HealthCare-AI`** realm. Follow these steps to align you
 ```bash
 docker run -p 8080:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin quay.io/keycloak/keycloak:latest start-dev
 
-2. Realm & Keys
+### 2. Realm & Keys
 Create a Realm named HealthCare-AI.
 
 Go to Realm Settings -> Keys -> RS256 and click Public Key.
 
 Copy this string. You will need to format it with \n characters for the KEYCLOAK_PUBLIC_KEY variable in your .env.
 
-3. Client Configurations
+### 3. Client Configurations
 Client 1: streamlit-ui (Human Identity)
 
 Client ID: streamlit-ui
@@ -62,7 +62,7 @@ Set a permanent password (e.g., password123) in the Credentials tab and turn off
 
 Use this user to log in via the Streamlit UI to test identity-driven orchestration.
 
-🚀 Installation & Environment
+## 🚀 Installation & Environment
 Environment Setup:
 Bash
 python -m venv .venv
@@ -91,7 +91,7 @@ KEYCLOAK_PUBLIC_KEY="-----BEGIN PUBLIC KEY-----\nYOUR_KEY_HERE\n-----END PUBLIC 
 # --- AI & Agent Configuration ---
 OPENAI_API_KEY=sk-proj-...
 POLICY_AGENT_PORT=9999
-🛠️ Execution Sequence
+## 🛠️ Execution Sequence
 Run these in separate terminals to maintain the agent mesh:
 
 Terminal 1: MCP Provider Server
